@@ -1,26 +1,28 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Nav from './components/Nav';
+import { Provider } from 'react-redux';
+import { Fragment } from 'react';
+import store from './store';
+import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import adminDashboard from './components/adminDashboard';
+import Home from './components/Home';
+import AdminLogin from './components/AdminLogin';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+	return (
+		<Provider store={store}>
+			<Fragment>
+				<BrowserRouter>
+					<Nav />
+					<Switch>
+						<Route exact path="/Admin" component={adminDashboard} />
+						<Route exact path="/Home" component={Home} />
+						<Route exact path="/AdminLogin" component={AdminLogin} />
+					</Switch>
+				</BrowserRouter>
+			</Fragment>
+		</Provider>
+	);
+};
 
 export default App;
