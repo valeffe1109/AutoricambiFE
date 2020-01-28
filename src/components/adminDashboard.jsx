@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { Form, Button } from 'react-bootstrap';
 import { connect } from 'react-redux';
 import { addComponent } from '../actions/carParts';
+import { Redirect } from 'react-router-dom';
 
-const AdminDashboard = ({ addComponent }) => {
+const AdminDashboard = ({ addComponent, isAuthenticated }) => {
 	const [ formData, setFormData ] = useState({
 		nome: '',
 		modello: '',
@@ -20,6 +21,9 @@ const AdminDashboard = ({ addComponent }) => {
 		addComponent({ nome, modello, codice, descrizione, prezzo, foto });
 		console.log(formData);
 	};
+	if (!isAuthenticated) {
+		return <Redirect to="/AdminLogin" />;
+	}
 	return (
 		<div className="container">
 			<Form onSubmit={(e) => onSubmit(e)}>
@@ -92,6 +96,7 @@ const AdminDashboard = ({ addComponent }) => {
 	);
 };
 const mapStateToProps = (state) => ({
-	added: state.added
+	added: state.added,
+	isAuthenticated: state.auth.isAuthenticated
 });
 export default connect(mapStateToProps, { addComponent })(AdminDashboard);

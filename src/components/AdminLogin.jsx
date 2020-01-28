@@ -2,11 +2,13 @@ import React from 'react';
 import { useState } from 'react';
 import { Fragment } from 'react';
 import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
+
 import { adminLogin } from '../actions/auth.js';
 import PropTypes from 'prop-types';
 import { Form, Button, Container } from 'react-bootstrap';
 
-const AdminLogin = ({ adminLogin }) => {
+const AdminLogin = ({ adminLogin, isAuthenticated }) => {
 	const [ formData, setFormData ] = useState({
 		email: '',
 		password: ''
@@ -19,6 +21,10 @@ const AdminLogin = ({ adminLogin }) => {
 		adminLogin({ email, password });
 		console.log(formData);
 	};
+
+	if (isAuthenticated) {
+		return <Redirect to="/Admin" />;
+	}
 	return (
 		<Fragment>
 			<Container>

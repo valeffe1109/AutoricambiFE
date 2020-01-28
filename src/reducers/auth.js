@@ -1,8 +1,8 @@
-import { LOGIN_SUCCESS, LOGIN_FAILED, USER_LOADED } from '../actions/types';
+import { LOGIN_SUCCESS, LOGIN_FAILED, USER_LOADED, LOGOUT } from '../actions/types';
 
 const initialState = {
 	token: localStorage.getItem('token'),
-	isAuthenticated: null,
+	isAuthenticated: false,
 	loading: true,
 	admin: null
 };
@@ -28,6 +28,14 @@ export default function(state = initialState, action) {
 				loading: false
 			};
 		case LOGIN_FAILED:
+			localStorage.removeItem('token');
+			return {
+				...state,
+				token: null,
+				isAuthenticated: false,
+				loading: false
+			};
+		case LOGOUT:
 			localStorage.removeItem('token');
 			return {
 				...state,
