@@ -36,7 +36,7 @@ export const addCar = ({
 	});
 
 	try {
-		const res = await axios.post('http://localhost:5000/api/auto', body, config);
+		const res = await axios.post('https://intermediautoapi.herokuapp.com/api/auto', body, config);
 		console.log(res);
 		dispatch({
 			type: NEWCAR_ADDED

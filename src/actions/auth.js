@@ -9,7 +9,7 @@ export const loadUser = () => async (dispatch) => {
 	}
 
 	try {
-		const res = await axios.get('http://localhost:5000/api/auth');
+		const res = await axios.get('https://intermediautoapi.herokuapp.com/api/auth');
 
 		dispatch({
 			type: USER_LOADED,
@@ -34,7 +34,7 @@ export const adminLogin = ({ email, password }) => async (dispatch) => {
 	const body = JSON.stringify({ email, password });
 
 	try {
-		const res = await axios.post('http://localhost:5000/api/auth', body, config);
+		const res = await axios.post('https://intermediautoapi.herokuapp.com/api/auth', body, config);
 		console.log(res);
 		dispatch({
 			type: LOGIN_SUCCESS,

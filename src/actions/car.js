@@ -4,7 +4,7 @@ import { GET_CARS, GET_CAR, GET_FAILED } from './types';
 
 export const getCars = () => async (dispatch) => {
 	try {
-		const res = await axios.get('http://localhost:5000/api/auto');
+		const res = await axios.get('https://intermediautoapi.herokuapp.com/api/auto');
 		dispatch({
 			type: GET_CARS,
 			payload: res.data
@@ -19,7 +19,7 @@ export const getCars = () => async (dispatch) => {
 
 export const getCar = (id) => async (dispatch) => {
 	try {
-		const res = await axios.get(`http://localhost:5000/api/auto/${id}`);
+		const res = await axios.get(`https://intermediautoapi.herokuapp.com/api/auto/${id}`);
 		dispatch({
 			type: GET_CAR,
 			payload: res.data
