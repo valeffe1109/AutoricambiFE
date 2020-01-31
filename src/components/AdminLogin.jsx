@@ -38,7 +38,6 @@ const AdminLogin = ({ adminLogin, isAuthenticated }) => {
 							onChange={(e) => onChange(e)}
 							placeholder="Enter email"
 						/>
-						<Form.Text className="text-muted">We'll never share your email with anyone else.</Form.Text>
 					</Form.Group>
 
 					<Form.Group controlId="formBasicPassword">
@@ -50,6 +49,9 @@ const AdminLogin = ({ adminLogin, isAuthenticated }) => {
 							onChange={(e) => onChange(e)}
 							placeholder="Password"
 						/>
+						<Form.Text className="text-muted">
+							Solo gli utenti autorizzati possono accedere a questa pagina
+						</Form.Text>
 					</Form.Group>
 					<Button variant="primary" type="submit">
 						Submit

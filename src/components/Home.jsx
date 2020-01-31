@@ -1,8 +1,14 @@
-import React from 'react';
-import { NavDropdown, Nav } from 'react-bootstrap';
+import React, { Fragment } from 'react';
+import ChiSiamo from './ChiSiamo';
+import Jumbo from './Jumbotron';
 
 const Home = () => {
-	return <h1>CIAO</h1>;
+	return (
+		<Fragment>
+			<Jumbo />
+			<ChiSiamo />
+		</Fragment>
+	);
 };
 
 export default Home;

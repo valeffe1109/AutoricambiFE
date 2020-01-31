@@ -1,8 +1,11 @@
-export const NEWCOMPONENT_ADDED = 'NEWCOMPONENT_ADDED';
-export const NEWCOMPONENT_FAIL = 'NEWCOMPONENT_FAIL';
+export const NEWCAR_ADDED = 'NEWCOMPONENT_ADDED';
+export const NEWCAR_FAIL = 'NEWCOMPONENT_FAIL';
 export const LOGIN_SUCCESS = 'LOGIN_SUCCESS';
 export const LOGIN_FAILED = 'LOGIN_FAILED';
 export const USER_LOADED = 'USER_LOADED';
 export const AUTH_ERROR = 'AUTH_ERROR';
 export const LOGOUT = 'LOGOUT';
 export const CLEAR_PROFILE = 'CLEAR_PROFILE';
+export const GET_CARS = 'GET_CARS';
+export const GET_FAILED = 'GET_FAILED';
+export const GET_CAR = 'GET_CAR';

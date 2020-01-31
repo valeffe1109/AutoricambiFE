@@ -1,4 +1,4 @@
-import { NEWCOMPONENT_ADDED, NEWCOMPONENT_FAIL } from '../actions/types';
+import { NEWCAR_ADDED, NEWCAR_FAIL } from '../actions/types';
 
 const initialState = {
 	added: false
@@ -8,12 +8,12 @@ export default function(state = initialState, action) {
 	const { type } = action;
 
 	switch (type) {
-		case NEWCOMPONENT_ADDED:
+		case NEWCAR_ADDED:
 			return {
 				...state,
 				added: true
 			};
-		case NEWCOMPONENT_FAIL:
+		case NEWCAR_FAIL:
 			return {
 				...state,
 				added: false

@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
-import carParts from './carParts';
+import addCar from './addCar';
 import auth from './auth';
+import car from './car';
 
 export default combineReducers({
-	carParts,
-	auth
+	addCar,
+	auth,
+	car
 });
