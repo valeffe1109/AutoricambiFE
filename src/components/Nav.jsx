@@ -41,7 +41,7 @@ const Menu = ({ auth: { isAuthenticated, loading }, logout }) => {
 
 	const guestNav = (
 		<Navbar className="mb-5" collapseOnSelect expand="lg" variant="light" style={{ backgroundColor: '#FFFFFF' }}>
-			<Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+			<Navbar.Brand href="#home">INTERMEDIAUTO.IT</Navbar.Brand>
 			<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 			<Navbar.Collapse id="responsive-navbar-nav">
 				<Nav className="mr-auto">

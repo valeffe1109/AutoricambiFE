@@ -128,9 +128,13 @@ const CarDetails = ({
 						<h4 className="text-center">{modello}</h4>
 						<p className="text-center">{descrizione}</p>
 						<p className="text-center">
-							<Button style={{ marginRight: '1rem' }}>MODIFICA</Button>
+							<Button variant="outline-info" style={{ marginRight: '1rem' }}>
+								MODIFICA
+							</Button>
 
-							<Button onClick={() => deleteCar(_id)}>CANCELLA</Button>
+							<Button variant="outline-danger" onClick={() => deleteCar(_id)}>
+								CANCELLA
+							</Button>
 						</p>
 					</Col>
 				</Row>
