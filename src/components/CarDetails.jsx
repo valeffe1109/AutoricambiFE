@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { Redirect } from 'react-router-dom';
 import { deleteCar } from '../actions/car';
 import { Carousel, Container, Row, Col, Button } from 'react-bootstrap';
 
