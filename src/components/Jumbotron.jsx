@@ -7,14 +7,14 @@ const Jumbo = () => {
 		backgroundSize: 'cover'
 	};
 	return (
-		<Container>
-			<Jumbotron style={jumboStyle}>
+		<Jumbotron fluid style={jumboStyle}>
+			<Container>
 				<h1 className="text-center">Accedi al nostro parco auto</h1>
 				<p className="text-center">
 					<Button variant="outline-dark">Clicca Quì</Button>
 				</p>
-			</Jumbotron>
-		</Container>
+			</Container>
+		</Jumbotron>
 	);
 };
 
