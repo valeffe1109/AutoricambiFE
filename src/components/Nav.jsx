@@ -4,6 +4,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { logout } from '../actions/auth.js';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+import { faPlus } from '@fortawesome/free-solid-svg-icons';
 import { faHome } from '@fortawesome/free-solid-svg-icons';
 import { faCar } from '@fortawesome/free-solid-svg-icons';
 import { faAddressCard } from '@fortawesome/free-solid-svg-icons';
@@ -11,8 +12,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const Menu = ({ auth: { isAuthenticated, loading }, logout }) => {
 	const adminNav = (
-		<Navbar className="mb-5" collapseOnSelect expand="lg" variant="dark" style={{ backgroundColor: '#222831' }}>
-			<Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+		<Navbar className="mb-5" collapseOnSelect expand="lg" variant="light" style={{ backgroundColor: '#FFFFFF' }}>
+			<Navbar.Brand href="#home">INTERMEDIAUTO.IT</Navbar.Brand>
 			<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 			<Navbar.Collapse id="responsive-navbar-nav">
 				<Nav className="mr-auto">
@@ -25,9 +26,12 @@ const Menu = ({ auth: { isAuthenticated, loading }, logout }) => {
 					<Nav.Link href="/ParcoAuto">
 						<FontAwesomeIcon icon={faCar} /> Parco Auto
 					</Nav.Link>
+					<Nav.Link href="/Admin">
+						<FontAwesomeIcon icon={faPlus} /> Aggiungi Auto
+					</Nav.Link>
 				</Nav>
 				<Nav>
-					<Button onClick={logout} variant="danger">
+					<Button onClick={logout} variant="outline-danger">
 						LOGOUT
 					</Button>
 				</Nav>
@@ -36,7 +40,7 @@ const Menu = ({ auth: { isAuthenticated, loading }, logout }) => {
 	);
 
 	const guestNav = (
-		<Navbar style={{ backgroundColor: '#222831' }} variant="dark" className="mb-5" collapseOnSelect expand="lg">
+		<Navbar className="mb-5" collapseOnSelect expand="lg" variant="light" style={{ backgroundColor: '#FFFFFF' }}>
 			<Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
 			<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 			<Navbar.Collapse id="responsive-navbar-nav">

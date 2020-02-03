@@ -16,12 +16,7 @@ const ParcoAuto = ({ getCars, car: { cars, loading } }) => {
 		<h1>OK</h1>
 	) : (
 		<Fragment>
-			<Container className="mb-5">
-				<Form inline>
-					<FormControl type="text" placeholder="Search" className="mr-sm-2" />
-					<Button variant="outline-success">Search</Button>
-				</Form>
-			</Container>
+			<Container className="mb-5" />
 			<Container>
 				<Row>
 					{cars.map((car) => (

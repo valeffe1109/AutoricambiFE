@@ -62,9 +62,9 @@ const CarDetails = ({
 						</Carousel>
 					</Col>
 					<Col sm={6}>
-						<h2>{titolo}</h2>
-						<h4>{modello}</h4>
-						<p>{descrizione}</p>
+						<h2 className="text-center">{titolo}</h2>
+						<h4 className="text-center">{modello}</h4>
+						<p className="text-center">{descrizione}</p>
 					</Col>
 				</Row>
 			</Container>
@@ -124,11 +124,14 @@ const CarDetails = ({
 						</Carousel>
 					</Col>
 					<Col sm={6}>
-						<h2>{titolo}</h2>
-						<h4>{modello}</h4>
-						<p>{descrizione}</p>
-						<Button style={{ marginRight: '2rem' }}>MODIFICA</Button>
-						<Button onClick={() => deleteCar(_id)}>CANCELLA</Button>
+						<h2 className="text-center">{titolo}</h2>
+						<h4 className="text-center">{modello}</h4>
+						<p className="text-center">{descrizione}</p>
+						<p className="text-center">
+							<Button style={{ marginRight: '1rem' }}>MODIFICA</Button>
+
+							<Button onClick={() => deleteCar(_id)}>CANCELLA</Button>
+						</p>
 					</Col>
 				</Row>
 			</Container>

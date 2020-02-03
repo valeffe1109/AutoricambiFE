@@ -1,14 +1,20 @@
 import React from 'react';
-import { Jumbotron, Container } from 'react-bootstrap';
+import { Jumbotron, Container, Button } from 'react-bootstrap';
 
 const Jumbo = () => {
+	const jumboStyle = {
+		backgroundImage: 'url(https://imagizer.imageshack.com/img922/6830/j23pjr.jpg)',
+		backgroundSize: 'cover'
+	};
 	return (
-		<Jumbotron fluid>
-			<Container>
-				<h1>Fluid jumbotron</h1>
-				<p>This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
-			</Container>
-		</Jumbotron>
+		<Container>
+			<Jumbotron style={jumboStyle}>
+				<h1 className="text-center">Accedi al nostro parco auto</h1>
+				<p className="text-center">
+					<Button variant="outline-dark">Clicca Quì</Button>
+				</p>
+			</Jumbotron>
+		</Container>
 	);
 };
 

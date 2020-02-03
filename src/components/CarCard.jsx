@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { Card } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import { connect } from 'react-redux';
 
 const CarCard = ({
@@ -11,16 +11,17 @@ const CarCard = ({
 			<Card>
 				<Card.Img variant="top" src={foto1} className="img-fluid" />
 				<Card.Body>
-					<Card.Title>{titolo}</Card.Title>
+					<Card.Title className="text-center">{titolo}</Card.Title>
 					<Card.Text>
-						<p>{modello}</p>
-						{prezzo} €
+						<p className="text-center">{prezzo} €</p>
 					</Card.Text>
-				</Card.Body>
-
-				<Card.Body>
-					<Card.Link href={`/Dettagli/${_id}`}>MAGGIORI INFO!</Card.Link>
-					<Card.Link href="#">Another Link</Card.Link>
+					<Card.Link href={`/Dettagli/${_id}`}>
+						<p className="text-center">
+							<Button variant="outline-success" size="lg">
+								MAGGIORI INFO!
+							</Button>
+						</p>
+					</Card.Link>
 				</Card.Body>
 			</Card>
 		</Fragment>
