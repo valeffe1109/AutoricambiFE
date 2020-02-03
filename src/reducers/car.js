@@ -1,4 +1,4 @@
-import { GET_CARS, GET_CAR, GET_FAILED } from '../actions/types';
+import { GET_CARS, GET_CAR, GET_FAILED, DELETE_CAR } from '../actions/types';
 
 const initialState = {
 	cars: [],
@@ -28,6 +28,10 @@ export default function(state = initialState, action) {
 				...state,
 				error: payload,
 				loading: false
+			};
+		case DELETE_CAR:
+			return {
+				...state
 			};
 		default:
 			return state;

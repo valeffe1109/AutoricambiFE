@@ -13,9 +13,8 @@ const CarCard = ({
 				<Card.Body>
 					<Card.Title>{titolo}</Card.Title>
 					<Card.Text>
-						<h4>{modello}</h4>
-						<p>{descrizione}</p>
-						<h4>{prezzo} €</h4>
+						<p>{modello}</p>
+						{prezzo} €
 					</Card.Text>
 				</Card.Body>
 

@@ -25,7 +25,7 @@ const ParcoAuto = ({ getCars, car: { cars, loading } }) => {
 			<Container>
 				<Row>
 					{cars.map((car) => (
-						<Col sm={4} className="d-flex justify-content-center">
+						<Col key={car._id} sm={4} className="d-flex justify-content-center">
 							<CarCard key={car._id} car={car} />
 						</Col>
 					))}
