@@ -4,7 +4,8 @@ import { Jumbotron, Container, Button } from 'react-bootstrap';
 const Jumbo = () => {
 	const jumboStyle = {
 		backgroundImage: 'url(https://imagizer.imageshack.com/img922/6830/j23pjr.jpg)',
-		backgroundSize: 'cover'
+		backgroundSize: 'cover',
+		backgroundPosition: 'bottom,center'
 	};
 	return (
 		<Jumbotron fluid style={jumboStyle}>
