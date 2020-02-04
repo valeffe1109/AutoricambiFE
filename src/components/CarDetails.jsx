@@ -2,6 +2,7 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { deleteCar } from '../actions/car';
+import Contatti from './Contatti';
 import { Carousel, Container, Row, Col, Button } from 'react-bootstrap';
 
 const CarDetails = ({
@@ -62,12 +63,18 @@ const CarDetails = ({
 						</Carousel>
 					</Col>
 					<Col sm={6}>
-						<h2 className="text-center">{titolo}</h2>
+						<h2 className="text-center mt-5">{titolo}</h2>
 						<h4 className="text-center">{modello}</h4>
 						<p className="text-center">{descrizione}</p>
 					</Col>
 				</Row>
+				<Row>
+					<Col sm={12}>
+						<h1 className="text-center mt-5">SEI INTERESSATO A QUEST'AUTO?</h1>
+					</Col>
+				</Row>
 			</Container>
+			<Contatti />
 		</Fragment>
 	);
 
@@ -124,7 +131,7 @@ const CarDetails = ({
 						</Carousel>
 					</Col>
 					<Col sm={6}>
-						<h2 className="text-center">{titolo}</h2>
+						<h2 className="text-center mt-5">{titolo}</h2>
 						<h4 className="text-center">{modello}</h4>
 						<p className="text-center">{descrizione}</p>
 						<p className="text-center">
@@ -138,7 +145,13 @@ const CarDetails = ({
 						</p>
 					</Col>
 				</Row>
+				<Row className="mt-5">
+					<Col sm={12}>
+						<h1 className="text-center">SEI INTERESSATO A QUEST'AUTO?</h1>
+					</Col>
+				</Row>
 			</Container>
+			<Contatti />
 		</Fragment>
 	);
 
