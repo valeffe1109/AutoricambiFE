@@ -5,7 +5,7 @@ const ChiSiamo = () => {
 	return (
 		<Container>
 			<Row>
-				<Col sm={6}>
+				<Col sm={12} md={6}>
 					<h1 className="text-center">LOREM IPSUM</h1>
 					<p className="text-center">
 						Cos’è Lorem Ipsum? Lorem Ipsum è un testo segnaposto utilizzato nel settore della tipografia e
@@ -18,7 +18,7 @@ const ChiSiamo = () => {
 						versioni del Lorem Ipsum.
 					</p>
 				</Col>
-				<Col sm={6} className="d-flex justify-content-center">
+				<Col sm={12} md={6} className="d-flex justify-content-center">
 					<Carousel>
 						<Carousel.Item>
 							<img

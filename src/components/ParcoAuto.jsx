@@ -2,7 +2,7 @@ import React, { Fragment, useEffect } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import CarCard from './CarCard';
-import { Container, Row, Col, Form, Button, FormControl } from 'react-bootstrap';
+import { Container, Row, Col } from 'react-bootstrap';
 import { getCars } from '../actions/car';
 
 const ParcoAuto = ({ getCars, car: { cars, loading } }) => {

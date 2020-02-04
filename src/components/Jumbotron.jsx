@@ -12,7 +12,9 @@ const Jumbo = () => {
 			<Container>
 				<h1 className="text-center">Accedi al nostro parco auto</h1>
 				<p className="text-center">
-					<Button variant="outline-dark">Clicca Quì</Button>
+					<Button href="ParcoAuto" variant="outline-dark">
+						Clicca Quì
+					</Button>
 				</p>
 			</Container>
 		</Jumbotron>
