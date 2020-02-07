@@ -25,8 +25,9 @@ const App = () => {
 			<Fragment>
 				<BrowserRouter>
 					<Nav />
+
 					<Switch>
-						<Route exact path="/Home" component={Home} />
+						<Route exact path="/" component={Home} />
 						<Route exact path="/AdminLogin" component={AdminLogin} />
 						<Route exact path="/ParcoAuto" component={ParcoAuto} />
 						<Route exact path="/Dettagli/:id" component={Dettagli} />

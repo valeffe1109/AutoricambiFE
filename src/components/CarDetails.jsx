@@ -14,7 +14,7 @@ const CarDetails = ({
 		<Fragment>
 			<Container>
 				<Row>
-					<Col sm={6}>
+					<Col sm={12} md={12} lg={6}>
 						<Carousel>
 							<Carousel.Item>
 								<img className="d-block w-100 img-fluid" src={foto1} alt="First slide" />
@@ -62,14 +62,14 @@ const CarDetails = ({
 							</Carousel.Item>
 						</Carousel>
 					</Col>
-					<Col sm={6}>
+					<Col sm={12} md={12} lg={6}>
 						<h2 className="text-center mt-5">{titolo}</h2>
 						<h4 className="text-center">{modello}</h4>
 						<p className="text-center">{descrizione}</p>
 					</Col>
 				</Row>
 				<Row>
-					<Col sm={12}>
+					<Col sm={12} md={12} lg={12}>
 						<h1 className="text-center mt-5">SEI INTERESSATO A QUEST'AUTO?</h1>
 					</Col>
 				</Row>
@@ -82,7 +82,7 @@ const CarDetails = ({
 		<Fragment>
 			<Container>
 				<Row>
-					<Col sm={6}>
+					<Col sm={12} md={12} lg={6}>
 						<Carousel>
 							<Carousel.Item>
 								<img className="d-block w-100 img-fluid" src={foto1} alt="First slide" />
@@ -130,7 +130,7 @@ const CarDetails = ({
 							</Carousel.Item>
 						</Carousel>
 					</Col>
-					<Col sm={6}>
+					<Col sm={12} md={12} lg={6}>
 						<h2 className="text-center mt-5">{titolo}</h2>
 						<h4 className="text-center">{modello}</h4>
 						<p className="text-center">{descrizione}</p>
@@ -146,7 +146,7 @@ const CarDetails = ({
 					</Col>
 				</Row>
 				<Row className="mt-5">
-					<Col sm={12}>
+					<Col sm={12} md={12} lg={12}>
 						<h1 className="text-center">SEI INTERESSATO A QUEST'AUTO?</h1>
 					</Col>
 				</Row>
