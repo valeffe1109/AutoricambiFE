@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import CarCard from './CarCard';
 import { Container, Row, Col } from 'react-bootstrap';
 import { getCars } from '../actions/car';
-
+import Spinn from './Spinn';
 const ParcoAuto = ({ getCars, car: { cars, loading } }) => {
 	useEffect(
 		() => {
@@ -13,7 +13,7 @@ const ParcoAuto = ({ getCars, car: { cars, loading } }) => {
 		[ getCars ]
 	);
 	return loading ? (
-		<h1>OK</h1>
+		<Spinn />
 	) : (
 		<Fragment>
 			<Container className="mb-5" />
