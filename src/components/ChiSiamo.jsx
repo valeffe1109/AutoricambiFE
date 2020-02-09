@@ -6,13 +6,13 @@ const ChiSiamo = () => {
 		<Container>
 			<Row>
 				<Col sm={12} md={12} lg={6}>
-					<h1 className="text-center">COSA E'?</h1>
+					<h1 className="text-center">COSA È?</h1>
 					<p className="text-center">Intermediauto è una webapp dedicata alla compravendita di automobili.</p>
 					<ul>
-						COSA E' POSSIBILE FARE?
+						COSA È POSSIBILE FARE?
 						<li>Visionare le automobili disponibili</li>
 						<li> Gli admin possono effettuare login e logout tramite Token</li>
-						<li>Gli admin possono aggiungere modificare e cancellare gli annunci</li>
+						<li>Gli admin possono aggiungere, modificare e cancellare gli annunci</li>
 					</ul>
 				</Col>
 				<Col sm={12} md={12} lg={6} className="d-flex justify-content-center">
