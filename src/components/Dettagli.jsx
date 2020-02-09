@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import CarDetails from './CarDetails';
 import { getCar } from '../actions/car.js';
 import { connect } from 'react-redux';
+import Spinn from './Spinn';
 
 const Dettagli = ({ getCar, car: { car, loading }, match }) => {
 	useEffect(
@@ -12,7 +13,7 @@ const Dettagli = ({ getCar, car: { car, loading }, match }) => {
 		[ getCar ]
 	);
 	return loading ? (
-		<h1>OK</h1>
+		<Spinn />
 	) : (
 		<Fragment>
 			<CarDetails car={car} />
